@@ -20,6 +20,7 @@ const ForgotPassword = () => {
       alert('Password reset link has been sent to your email.');
     } catch (error) {
       console.error('Failed to send reset link', error);
+      alert('user not found.');
     } finally {
       setSubmitting(false);
     }
